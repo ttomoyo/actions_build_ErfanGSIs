@@ -43,6 +43,8 @@ jobs:
        - name: Setting up ErfanGSI requirements
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs
+              python -m pip install --upgrade pip
+              pip install tensorflow==1.14.0
               sudo apt install python3.7
               mkdir ./output
               sudo bash ./setup.sh
