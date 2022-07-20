@@ -30,7 +30,7 @@ jobs:
            
        - name: Initialization environment
          run: |
-            sudo -E apt-get -qq install git wget python
+            sudo -E apt-get -qq install git wget
        
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git ErfanGSIs
@@ -43,6 +43,7 @@ jobs:
        - name: Setting up ErfanGSI requirements
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs
+              sudo apt-get install python3.7
               mkdir ./output
               sudo bash ./setup.sh
        
