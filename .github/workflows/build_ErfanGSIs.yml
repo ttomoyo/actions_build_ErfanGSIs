@@ -43,7 +43,7 @@ jobs:
        - name: Setting up ErfanGSI requirements
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs
-              sudo apt-get install python3.7
+              sudo apt install python3.7
               mkdir ./output
               sudo bash ./setup.sh
        
