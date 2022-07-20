@@ -15,8 +15,8 @@ on:
     
 env:
   ROM_URL: https://download.c.realme.com/osupdate/RMX2040_11_OTA_0470_all_gROvoIXPabkc.ozip
-  ROM_NAME: ColorOS
-  BUILD_TYPE: ab
+  ROM_NAME: Generic
+  BUILD_TYPE: AB
   TZ: Asia/Shanghai
 
 jobs:
